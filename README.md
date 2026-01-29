@@ -1,35 +1,35 @@
-# MCM-ICM_Agent_Skills
+﻿# MCM-ICM_Agent_Skills
 
-Core agent skills for MCM/ICM workflows.
+MCM/ICM 竞赛流程的核心 agent skills。
 
-## Skills
+## 技能列表
 
 - article-maker
-  - When to use: Review MCM/ICM paper format and generate LaTeX structure.
-  - Inputs: style files or template/specs, text blocks; optional outline/figure table list.
-  - Outputs: compliance checklist, academic rewrites, LaTeX skeleton, figure/table templates.
+  - 使用场景：检查 MCM/ICM 论文格式并生成 LaTeX 结构。
+  - 输入：模板/格式规范与正文文本（可选：目录结构、图表清单）。
+  - 输出：格式合规清单、学术化改写、LaTeX 骨架、图表模板。
 
 - problem-analysis
-  - When to use: Decompose a contest prompt into tasks and early execution plan.
-  - Inputs: problem statement (EN required, CN optional), datasets/constraints optional.
-  - Outputs: task list (hard/soft), light modeling directions, 0-6 hour team plan, judge-view notes.
+  - 使用场景：将题目拆解为任务与早期作战计划。
+  - 输入：题面（英文必需，中文可选）、数据集/约束可选。
+  - 输出：硬/软任务清单、轻量建模方向、0-6 小时分工与评委视角提示。
 
 - choose-model
-  - When to use: Select modeling routes after you already have a TaskMap.
-  - Inputs: TaskMap, constraints, preferences; optional flowchart style example.
-  - Outputs: multiple routes per task with pros/cons, difficulty, validation metrics, Plan A/B, flowchart.
+  - 使用场景：已有 TaskMap 后进行模型路线选择。
+  - 输入：TaskMap、约束、偏好（可选：流程图风格示例）。
+  - 输出：每任务多条路线（优缺点/难度/验证指标），Plan A/B 与流程图。
 
 - data-cleaner
-  - When to use: Produce reproducible data cleaning artifacts for papers/competition submissions.
-  - Inputs: raw data files plus optional data description/cleaning goals.
-  - Outputs: cleaned data, cleaning log, post-clean audit report, paper-ready figures.
+  - 使用场景：产出可复现的数据清洗材料用于论文/竞赛提交。
+  - 输入：原始数据文件（可选：字段说明/清洗目标）。
+  - 输出：清洗后数据、清洗日志、清洗后审计报告、论文级图表。
 
 - figure-maker
-  - When to use: Recreate a paper figure style from an example and given data.
-  - Inputs: data, style example, figure type; optional tool preference/output format.
-  - Outputs: paper-ready figures (png/pdf), dual versions, captions, figure README.
+  - 使用场景：依据示例风格与数据复刻论文图。
+  - 输入：数据、风格示例、图类型（可选：工具偏好/输出格式）。
+  - 输出：论文级图（png/pdf）、双版本图、图注、figure README。
 
 - model
-  - When to use: End-to-end modeling implementation and QA.
-  - Inputs: cleaned data and selected model plan.
-  - Outputs: runnable code, results tables, figures, model_report, final_run package, sanity checks.
+  - 使用场景：端到端建模实现与评审式 QA。
+  - 输入：清洗后数据与选定的模型方案。
+  - 输出：可运行代码、结果表、图表、model_report、final_run 包与合理性检查。
